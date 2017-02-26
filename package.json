@@ -1,6 +1,6 @@
 {
   "name": "sterilize",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "JS Object cleanup",
   "author": "Vitaly Domnikov <dotcypress@gmail.com>",
   "license": "MIT",
