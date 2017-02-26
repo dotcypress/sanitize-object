@@ -1,0 +1,22 @@
+{
+  "name": "sterilize",
+  "version": "0.0.0",
+  "description": "JS Object cleanup",
+  "author": "Vitaly Domnikov <dotcypress@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "eslint": "^3.9.1",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-ava": "^4.0.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
