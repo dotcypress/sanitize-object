@@ -1,31 +1,27 @@
-# 💊 sterilize
-[![NPM Version](https://img.shields.io/npm/v/sterilize.svg?style=flat-square)](https://www.npmjs.com/package/sterilize)
-[![node](https://img.shields.io/node/v/sterilize.svg?style=flat-square)](https://www.npmjs.com/package/sterilize)
-[![Build Status](https://img.shields.io/travis/dotcypress/sterilize.svg?branch=master&style=flat-square)](https://travis-ci.org/dotcypress/sterilize)
+# 💊 sanitize-object
+[![NPM Version](https://img.shields.io/npm/v/sanitize-object.svg?style=flat-square)](https://www.npmjs.com/package/sanitize-object)
+[![node](https://img.shields.io/node/v/sanitize-object.svg?style=flat-square)](https://www.npmjs.com/package/sanitize-object)
+[![Build Status](https://img.shields.io/travis/dotcypress/sanitize-object.svg?branch=master&style=flat-square)](https://travis-ci.org/dotcypress/sanitize-object)
 
-> JS Object cleanup
+> Experimental JS Object cleanup
 
 ## Installation
 
 ```js
-$ npm install sterilize
+$ npm install sanitize-object
 ```
 
 ## Example
   
 ```js
-const exclude = require('sterilize/exclude')
+const { exclude, only } = require('sanitize-object/exclude')
+
 const sanitizeUser = exclude('password', 'id')
 const result = sanitizeUser({id: 42, name: 'Rupert', password: 'qwerty'})
-
 // result: { name: 'Rupert'}
 
-```
-
-```js
-const only = require('sterilize/only')
 const sanitizeUser = only('name')
 const result = sanitizeUser({id: 42, name: 'Rupert', password: 'qwerty'})
-
 // result: { name: 'Rupert'}
+
 ```

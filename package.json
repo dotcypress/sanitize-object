@@ -1,9 +1,13 @@
 {
-  "name": "sterilize",
-  "version": "0.0.2",
+  "name": "sanitize-object",
+  "version": "0.1.0",
   "description": "JS Object cleanup",
   "author": "Vitaly Domnikov <dotcypress@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dotcypress/sanitize-object.git"
+  },
   "main": "index.js",
   "engines": {
     "node": ">=6.4.0"
