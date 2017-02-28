@@ -14,7 +14,7 @@ $ npm install sanitize-object
 ## Example
   
 ```js
-const { exclude, only } = require('sanitize-object/exclude')
+const { exclude, only } = require('sanitize-object')
 
 const sanitizeUser = exclude('password', 'id')
 const result = sanitizeUser({id: 42, name: 'Rupert', password: 'qwerty'})
